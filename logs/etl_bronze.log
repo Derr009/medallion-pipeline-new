@@ -1,0 +1,42 @@
+2025-08-25 12:35:28,947 - INFO - ==================================================
+2025-08-25 12:35:28,947 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-25 12:35:28,947 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-25 12:35:31,308 - INFO - Successfully connected to Google Sheet: 'Logistics Data'
+2025-08-25 12:35:31,794 - ERROR -   - Worksheet 'customers' not found in the Google Sheet.
+2025-08-25 12:35:32,538 - ERROR -   - Worksheet 'orders' not found in the Google Sheet.
+2025-08-25 12:35:33,356 - ERROR -   - Worksheet 'shipments' not found in the Google Sheet.
+2025-08-25 12:35:33,970 - ERROR -   - Worksheet 'drivers' not found in the Google Sheet.
+2025-08-25 12:35:34,586 - ERROR -   - Worksheet 'vehicles' not found in the Google Sheet.
+2025-08-25 12:35:34,586 - INFO - --- EXTRACT step completed successfully. ---
+2025-08-25 12:35:34,636 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-25 12:35:34,636 - INFO - --- Starting LOAD step: CSV to Bronze Layer (Full Replace) ---
+2025-08-25 12:35:34,637 - INFO - Schema 'bronze' created or already exists.
+2025-08-25 12:35:34,637 - WARNING -   - CSV file for 'customers' not found. Skipping load.
+2025-08-25 12:35:34,637 - WARNING -   - CSV file for 'orders' not found. Skipping load.
+2025-08-25 12:35:34,637 - WARNING -   - CSV file for 'shipments' not found. Skipping load.
+2025-08-25 12:35:34,637 - WARNING -   - CSV file for 'drivers' not found. Skipping load.
+2025-08-25 12:35:34,637 - WARNING -   - CSV file for 'vehicles' not found. Skipping load.
+2025-08-25 12:35:34,637 - INFO - --- LOAD step completed successfully. ---
+2025-08-25 12:35:34,637 - INFO - Pipeline run finished successfully.
+2025-08-25 12:35:34,637 - INFO - ==================================================
+2025-08-25 12:36:23,798 - INFO - ==================================================
+2025-08-25 12:36:23,798 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-25 12:36:23,798 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-25 12:36:25,971 - INFO - Successfully connected to Google Sheet: 'Logistics Data'
+2025-08-25 12:36:29,330 - INFO -   - Extracted 'Customers' to CSV. Rows: 10000, Checksum: 6846a535...
+2025-08-25 12:36:31,879 - INFO -   - Extracted 'Orders' to CSV. Rows: 10000, Checksum: 202bff6b...
+2025-08-25 12:36:34,258 - INFO -   - Extracted 'Shipments' to CSV. Rows: 10000, Checksum: f0c5776e...
+2025-08-25 12:36:35,778 - INFO -   - Extracted 'Drivers' to CSV. Rows: 10000, Checksum: b92b236e...
+2025-08-25 12:36:37,519 - INFO -   - Extracted 'Vehicles' to CSV. Rows: 10000, Checksum: 3833c402...
+2025-08-25 12:36:37,519 - INFO - --- EXTRACT step completed successfully. ---
+2025-08-25 12:36:37,613 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-25 12:36:37,613 - INFO - --- Starting LOAD step: CSV to Bronze Layer (Full Replace) ---
+2025-08-25 12:36:37,614 - INFO - Schema 'bronze' created or already exists.
+2025-08-25 12:36:37,814 - INFO -   - Loaded 10000 rows into 'bronze.Customers' using 'replace' strategy.
+2025-08-25 12:36:37,961 - INFO -   - Loaded 10000 rows into 'bronze.Orders' using 'replace' strategy.
+2025-08-25 12:36:38,248 - INFO -   - Loaded 10000 rows into 'bronze.Shipments' using 'replace' strategy.
+2025-08-25 12:36:38,413 - INFO -   - Loaded 10000 rows into 'bronze.Drivers' using 'replace' strategy.
+2025-08-25 12:36:38,534 - INFO -   - Loaded 10000 rows into 'bronze.Vehicles' using 'replace' strategy.
+2025-08-25 12:36:38,534 - INFO - --- LOAD step completed successfully. ---
+2025-08-25 12:36:38,534 - INFO - Pipeline run finished successfully.
+2025-08-25 12:36:38,534 - INFO - ==================================================

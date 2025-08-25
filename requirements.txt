@@ -1,0 +1,29 @@
+# Core
+pandas
+numpy
+sqlalchemy
+psycopg2-binary   # PostgreSQL driver
+sqlite3-binary    # if you also want to run locally with SQLite (optional)
+
+# Logging & Config
+python-dotenv     # for managing DB creds from .env
+loguru            # better logging
+
+# Orchestration / Scheduling
+schedule          # lightweight Python scheduler
+
+# EDA & Visualization
+matplotlib
+seaborn
+plotly
+
+# Jupyter
+notebook
+jupyterlab
+
+# Data Quality (optional but useful)
+great-expectations
+
+# API (if using Google Sheets API directly)
+gspread
+oauth2client

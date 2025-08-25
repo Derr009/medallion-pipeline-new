@@ -1,0 +1,17 @@
+2025-08-25 15:39:51,566 - INFO - ==================================================
+2025-08-25 15:39:51,566 - INFO - === Starting Silver Layer Build Process ===
+2025-08-25 15:39:51,614 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-25 15:39:51,615 - INFO - --- Starting build of SILVER Layer ---
+2025-08-25 15:39:51,615 - INFO -   - Building silver table: Drivers...
+2025-08-25 15:39:51,650 - INFO -     - DQ Check for Drivers: Bronze rows: 10000, Silver rows: 500, Rejected rows: 9500
+2025-08-25 15:39:51,651 - INFO -   - Building silver table: Vehicles...
+2025-08-25 15:39:51,675 - INFO -     - DQ Check for Vehicles: Bronze rows: 10000, Silver rows: 250, Rejected rows: 9750
+2025-08-25 15:39:51,676 - INFO -   - Building silver table: Customers...
+2025-08-25 15:39:51,742 - INFO -     - DQ Check for Customers: Bronze rows: 10000, Silver rows: 9487, Rejected rows: 513
+2025-08-25 15:39:51,743 - INFO -   - Building silver table: Orders...
+2025-08-25 15:39:51,811 - INFO -     - DQ Check for Orders: Bronze rows: 10000, Silver rows: 8165, Rejected rows: 1835
+2025-08-25 15:39:51,811 - INFO -   - Building silver table: Shipments...
+2025-08-25 15:39:51,855 - INFO -     - DQ Check for Shipments: Bronze rows: 10000, Silver rows: 6997, Rejected rows: 3003
+2025-08-25 15:39:51,856 - INFO - --- SILVER Layer build completed. ---
+2025-08-25 15:39:51,856 - INFO - Silver layer build finished successfully.
+2025-08-25 15:39:51,856 - INFO - ==================================================

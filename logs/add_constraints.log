@@ -1,0 +1,6 @@
+2025-08-25 15:59:53,534 - INFO - ==================================================
+2025-08-25 15:59:53,534 - INFO - === Starting Add Constraints Process ===
+2025-08-25 15:59:53,581 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-25 15:59:53,582 - INFO - Applying constraints from /home/nineleaps/PycharmProjects/medallion-pipeline-new/sql/silver_add_constraints.sql...
+2025-08-25 15:59:53,625 - INFO - Successfully applied all constraints.
+2025-08-25 15:59:53,625 - INFO - ==================================================
