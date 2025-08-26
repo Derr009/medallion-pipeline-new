@@ -1,0 +1,27 @@
+2025-08-26 17:23:05,940 - INFO - ==================================================
+2025-08-26 17:23:05,941 - INFO - === Starting Full Medallion Pipeline Run ===
+2025-08-26 17:23:05,941 - INFO - --- Running script: push_to_bronze.py ---
+2025-08-26 17:23:24,275 - INFO - Successfully completed push_to_bronze.py.
+2025-08-26 17:23:24,275 - INFO - --- Running script: build_silver.py ---
+2025-08-26 17:23:25,507 - ERROR - --- SCRIPT FAILED: build_silver.py ---
+2025-08-26 17:23:25,507 - ERROR - Return Code: 2
+2025-08-26 17:23:25,507 - ERROR - Output:
+
+2025-08-26 17:23:25,508 - ERROR - Error Output:
+/usr/bin/python3.10: can't open file '/home/nineleaps/PycharmProjects/medallion-pipeline-new/src/build_silver.py': [Errno 2] No such file or directory
+
+2025-08-26 17:23:25,508 - CRITICAL - Pipeline halted due to a failed step.
+2025-08-26 17:23:25,508 - INFO - === Full Medallion Pipeline Run Finished ===
+2025-08-26 17:23:25,508 - INFO - ==================================================
+2025-08-26 17:23:58,888 - INFO - ==================================================
+2025-08-26 17:23:58,888 - INFO - === Starting Full Medallion Pipeline Run ===
+2025-08-26 17:23:58,889 - INFO - --- Running script: push_to_bronze.py ---
+2025-08-26 17:24:12,567 - INFO - Successfully completed push_to_bronze.py.
+2025-08-26 17:24:12,567 - INFO - --- Running script: push_to_silver.py ---
+2025-08-26 17:24:14,544 - INFO - Successfully completed push_to_silver.py.
+2025-08-26 17:24:14,544 - INFO - --- Running script: add_constraints.py ---
+2025-08-26 17:24:16,035 - INFO - Successfully completed add_constraints.py.
+2025-08-26 17:24:16,036 - INFO - --- Running script: build_gold.py ---
+2025-08-26 17:24:17,675 - INFO - Successfully completed build_gold.py.
+2025-08-26 17:24:17,675 - INFO - === Full Medallion Pipeline Run Finished ===
+2025-08-26 17:24:17,675 - INFO - ==================================================

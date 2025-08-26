@@ -53,7 +53,8 @@ def execute_gold_script(engine, filepath):
         with engine.connect() as connection:
             connection.execute(text("CREATE SCHEMA IF NOT EXISTS gold;"))
             connection.execute(text(sql_script))
-            connection.commit()
+            # --- FIX: The line below was removed as it's handled automatically ---
+            # connection.commit()
         logging.info(f"    - Successfully built {table_name}.")
     except Exception as e:
         logging.error(f"    - Failed to execute {filepath}. Error: {e}")

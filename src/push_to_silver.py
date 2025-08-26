@@ -7,20 +7,25 @@ from sqlalchemy.exc import OperationalError
 
 # --- 1. CONFIGURATION & INITIALIZATION ---
 
+# Define project paths relative to this script's location
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_DIR = BASE_DIR / "logs"
 SQL_DIR = BASE_DIR / "sql"
+
+# Create necessary directories
 LOG_DIR.mkdir(exist_ok=True)
 
+# Setup basic logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(LOG_DIR / "silver_build.log"),
+        logging.FileHandler(LOG_DIR / "silver_build.log"),  # Dedicated log file
         logging.StreamHandler()
     ]
 )
 
+# Load environment variables
 load_dotenv()
 DB_USER = os.getenv("POSTGRES_USER")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
@@ -45,33 +50,32 @@ def get_db_engine():
         raise
 
 
-# --- 3. SILVER LAYER CORE FUNCTIONS (MODIFIED) ---
+# --- 3. SILVER LAYER CORE FUNCTIONS ---
 
 def execute_sql_from_file(engine, filepath, table_name_lower):
     """Executes a SQL script and logs row counts for DQ checks."""
-
-    # --- MODIFICATION: Capitalize the table name for queries ---
     table_name_cased = table_name_lower.capitalize()
     logging.info(f"  - Building silver table: {table_name_cased}...")
-    # --- END MODIFICATION ---
-
     try:
         with open(filepath, 'r') as file:
             sql_script = file.read()
 
         with engine.connect() as connection:
-            # --- MODIFICATION: Use quoted, case-sensitive table names ---
+            # Get count from bronze table before transformation
             bronze_count_query = f'SELECT COUNT(*) FROM bronze."{table_name_cased}";'
             bronze_count = connection.execute(text(bronze_count_query)).scalar()
 
+            # Execute the main silver build script
             connection.execute(text("CREATE SCHEMA IF NOT EXISTS silver;"))
             connection.execute(text(sql_script))
-            connection.commit()
+            # --- FIX: The line below was removed as it's handled automatically ---
+            # connection.commit()
 
+            # Get count from silver table after transformation
             silver_count_query = f'SELECT COUNT(*) FROM silver."{table_name_cased}";'
             silver_count = connection.execute(text(silver_count_query)).scalar()
-            # --- END MODIFICATION ---
 
+            # Data Quality Check Logging
             rows_rejected = bronze_count - silver_count
             logging.info(
                 f"    - DQ Check for {table_name_cased}: "
@@ -85,7 +89,9 @@ def execute_sql_from_file(engine, filepath, table_name_lower):
 
 
 def build_silver_layer(engine):
-    """Executes all SQL scripts in the /sql directory to build the Silver layer."""
+    """
+    Executes all SQL scripts in the /sql directory to build the Silver layer.
+    """
     logging.info("--- Starting build of SILVER Layer ---")
 
     sql_execution_order = [

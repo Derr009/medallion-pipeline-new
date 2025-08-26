@@ -1,172 +1,179 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
-import gspread
 import hashlib
 import logging
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
+import gspread
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import OperationalError
+from google.oauth2.service_account import Credentials
 
 # --- 1. CONFIGURATION & INITIALIZATION ---
 
-# Define project paths relative to this script's location
 BASE_DIR = Path(__file__).resolve().parent.parent
 LOG_DIR = BASE_DIR / "logs"
 BRONZE_INPUTS_DIR = BASE_DIR / "bronze_inputs"
 CONFIG_DIR = BASE_DIR / "config"
 
-# Create necessary directories
 LOG_DIR.mkdir(exist_ok=True)
 BRONZE_INPUTS_DIR.mkdir(exist_ok=True)
 CONFIG_DIR.mkdir(exist_ok=True)
 
-# Setup basic logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+    format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.FileHandler(LOG_DIR / "etl_bronze.log"),
         logging.StreamHandler()
     ]
 )
 
-# Load environment variables
 load_dotenv()
 DB_USER = os.getenv("POSTGRES_USER")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 DB_HOST = os.getenv("POSTGRES_HOST")
-DB_PORT = os.getenv("POSTGRES_PORT")
+DB_PORT = os.getenv("POSTGRES_PORT", "5432")
 DB_NAME = os.getenv("POSTGRES_DB")
-SHEET_NAME = os.getenv("GSPREAD_SHEET_NAME")
-CREDENTIALS_PATH = CONFIG_DIR / "credentials.json"
 
-# List of tables to be processed
+SHEET_ID = os.getenv("GSPREAD_SHEET_ID")  # prefer sheet ID
+CREDENTIALS_PATH = CONFIG_DIR / "capstone-467705-3c3a1f211475.json"
+
 TABLE_NAMES = ["Customers", "Orders", "Shipments", "Drivers", "Vehicles"]
-
 
 # --- 2. HELPER FUNCTIONS ---
 
+
 def get_db_engine():
-    """Creates and returns a SQLAlchemy engine for PostgreSQL."""
+    """Create SQLAlchemy engine for PostgreSQL."""
     try:
         engine = create_engine(
             f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
         )
         with engine.connect():
-            logging.info("Successfully connected to the PostgreSQL database.")
+            logging.info("Connected to PostgreSQL database.")
         return engine
     except OperationalError as e:
-        logging.error(f"Could not connect to the database. Error: {e}")
+        logging.error(f"DB connection failed: {e}")
         raise
 
 
 def create_bronze_schema(engine):
-    """Ensures the 'bronze' schema exists in the database."""
-    with engine.connect() as connection:
-        connection.execute(text("CREATE SCHEMA IF NOT EXISTS bronze"))
-        connection.commit()
-        logging.info("Schema 'bronze' created or already exists.")
+    """Ensure bronze schema exists."""
+    with engine.connect() as conn:
+        conn.execute(text("CREATE SCHEMA IF NOT EXISTS bronze"))
+        logging.info("Schema 'bronze' exists or created.")
 
 
-def calculate_checksum(file_path):
-    """Calculates the SHA256 checksum of a file."""
-    sha256_hash = hashlib.sha256()
+def calculate_checksum(file_path: Path) -> str:
+    sha256 = hashlib.sha256()
     with open(file_path, "rb") as f:
-        for byte_block in iter(lambda: f.read(4096), b""):
-            sha256_hash.update(byte_block)
-    return sha256_hash.hexdigest()
+        for block in iter(lambda: f.read(4096), b""):
+            sha256.update(block)
+    return sha256.hexdigest()
+
+
+def build_gspread_client():
+    """Build a gspread client with service account credentials."""
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets.readonly",
+        "https://www.googleapis.com/auth/drive.readonly"
+    ]
+    creds = Credentials.from_service_account_file(
+        str(CREDENTIALS_PATH),
+        scopes=scopes
+    )
+
+    # Standard secure gspread client
+    gc = gspread.authorize(creds)
+    return gc
+
+
+def open_spreadsheet(gc):
+    """Open spreadsheet by ID (preferred)."""
+    if not SHEET_ID:
+        raise ValueError("Set GSPREAD_SHEET_ID in .env")
+    logging.info(f"Opening Google Sheet by ID.")
+    return gc.open_by_key(SHEET_ID)
 
 
 # --- 3. ETL CORE FUNCTIONS ---
 
+
 def extract_from_gsheets():
-    """
-    Extracts data from all worksheets in a Google Sheet and saves them as CSV files,
-    overwriting any existing files.
-    """
-    logging.info("--- Starting EXTRACT step: Full extraction from Google Sheets ---")
+    """Extract all tables from Google Sheets to CSVs."""
+    logging.info("--- Starting EXTRACT step ---")
     try:
-        gc = gspread.service_account(filename=CREDENTIALS_PATH)
-        spreadsheet = gc.open(SHEET_NAME)
-        logging.info(f"Successfully connected to Google Sheet: '{SHEET_NAME}'")
+        gc = build_gspread_client()
+        spreadsheet = open_spreadsheet(gc)
 
         for table_name in TABLE_NAMES:
             try:
-                worksheet = spreadsheet.worksheet(table_name)
-                df = pd.DataFrame(worksheet.get_all_records())
+                ws = spreadsheet.worksheet(table_name)
+                df = pd.DataFrame(ws.get_all_records())
 
                 output_path = BRONZE_INPUTS_DIR / f"{table_name}.csv"
                 df.to_csv(output_path, index=False)
-
                 checksum = calculate_checksum(output_path)
+
                 logging.info(
-                    f"  - Extracted '{table_name}' to CSV. "
-                    f"Rows: {len(df)}, Checksum: {checksum[:8]}..."
+                    f"Extracted '{table_name}' → CSV, rows: {len(df)}, checksum: {checksum[:8]}..."
                 )
             except gspread.WorksheetNotFound:
-                logging.error(f"  - Worksheet '{table_name}' not found in the Google Sheet.")
+                logging.error(f"Worksheet '{table_name}' not found.")
             except Exception as e:
-                logging.error(f"  - Failed to extract '{table_name}'. Error: {e}")
+                logging.error(f"Failed to extract '{table_name}': {e}")
 
-        logging.info("--- EXTRACT step completed successfully. ---")
-
+        logging.info("--- EXTRACT completed ---")
     except Exception as e:
-        logging.error(f"An error occurred during the extraction phase. Error: {e}")
+        logging.error(f"Extraction failed: {e}")
         raise
 
 
 def load_to_bronze(engine):
-    """
-    Loads CSV files into the 'bronze' schema using a 'replace' strategy for all tables.
-    This ensures the Bronze layer is always a perfect mirror of the source files.
-    """
-    logging.info("--- Starting LOAD step: CSV to Bronze Layer (Full Replace) ---")
+    """Load CSVs into bronze schema using replace strategy."""
+    logging.info("--- Starting LOAD step ---")
     create_bronze_schema(engine)
 
     for table_name in TABLE_NAMES:
         csv_path = BRONZE_INPUTS_DIR / f"{table_name}.csv"
         if not csv_path.exists():
-            logging.warning(f"  - CSV file for '{table_name}' not found. Skipping load.")
+            logging.warning(f"CSV for '{table_name}' not found. Skipping.")
             continue
 
         try:
-            # Read all columns as string to prevent type errors from dirty data
             df = pd.read_csv(csv_path, dtype=str)
-
             df.to_sql(
                 name=table_name,
                 con=engine,
-                schema='bronze',
-                if_exists='replace',  # Use 'replace' for all tables
+                schema="bronze",
+                if_exists="replace",
                 index=False
             )
-
-            logging.info(
-                f"  - Loaded {len(df)} rows into 'bronze.{table_name}' using 'replace' strategy."
-            )
+            logging.info(f"Loaded {len(df)} rows into bronze.{table_name}")
         except Exception as e:
-            logging.error(f"  - Failed to load '{table_name}' to bronze schema. Error: {e}")
+            logging.error(f"Failed to load '{table_name}': {e}")
 
-    logging.info("--- LOAD step completed successfully. ---")
+    logging.info("--- LOAD completed ---")
 
 
 # --- 4. MAIN ORCHESTRATOR ---
 
+
 def main():
-    """Main function to orchestrate the ETL process."""
     logging.info("=" * 50)
     logging.info("=== Starting Bronze Layer Full Refresh Pipeline Run ===")
-
     try:
         extract_from_gsheets()
-        db_engine = get_db_engine()
-        load_to_bronze(db_engine)
-        logging.info("Pipeline run finished successfully.")
-
+        engine = get_db_engine()
+        load_to_bronze(engine)
+        logging.info("Pipeline finished successfully.")
     except Exception as e:
-        logging.critical(f"Pipeline run failed. Error: {e}")
-
+        logging.critical(f"Pipeline failed: {e}")
     finally:
         logging.info("=" * 50)
 

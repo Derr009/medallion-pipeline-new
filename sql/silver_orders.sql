@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver."Orders";
+DROP TABLE IF EXISTS silver."Orders" CASCADE;
 CREATE TABLE silver."Orders" AS
 WITH cleaned_orders AS (
     SELECT

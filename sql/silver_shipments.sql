@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver."Shipments";
+DROP TABLE IF EXISTS silver."Shipments" CASCADE;
 CREATE TABLE silver."Shipments" AS
 SELECT
     s.shipment_id::INTEGER,

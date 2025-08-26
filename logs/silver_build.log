@@ -15,3 +15,107 @@
 2025-08-25 15:39:51,856 - INFO - --- SILVER Layer build completed. ---
 2025-08-25 15:39:51,856 - INFO - Silver layer build finished successfully.
 2025-08-25 15:39:51,856 - INFO - ==================================================
+2025-08-26 17:07:37,761 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:07:37,762 - INFO - ==================================================
+2025-08-26 17:07:37,763 - INFO - === Starting Silver Layer Build Process ===
+2025-08-26 17:07:37,905 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 17:07:37,906 - INFO - --- Starting build of SILVER Layer ---
+2025-08-26 17:07:37,906 - INFO -   - Building silver table: Drivers...
+2025-08-26 17:07:37,921 - ERROR -     - Failed to execute /home/nineleaps/PycharmProjects/medallion-pipeline-new/sql/silver_drivers.sql. Error: (psycopg2.errors.DependentObjectsStillExist) cannot drop table silver."Drivers" because other objects depend on it
+DETAIL:  constraint fk_driver on table silver."Shipments" depends on table silver."Drivers"
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: DROP TABLE IF EXISTS silver."Drivers";
+CREATE TABLE silver."Drivers" AS
+WITH ranked_drivers AS (
+    SELECT
+        driver_id,
+        TRIM(driver_name) AS driver_name,
+        REGEXP_REPLACE(contact_number, '[^0-9]', '', 'g') AS contact_number,
+        ROW_NUMBER() OVER(PARTITION BY driver_id ORDER BY driver_name DESC) as rn
+    FROM
+        bronze."Drivers"
+    WHERE
+        LOWER(driver_name) NOT LIKE '%%test%%'
+)
+SELECT
+    driver_id::INTEGER,
+    driver_name,
+    contact_number
+FROM
+    ranked_drivers
+WHERE
+    rn = 1;]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-08-26 17:07:37,922 - CRITICAL - Silver layer build failed. Error: (psycopg2.errors.DependentObjectsStillExist) cannot drop table silver."Drivers" because other objects depend on it
+DETAIL:  constraint fk_driver on table silver."Shipments" depends on table silver."Drivers"
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: DROP TABLE IF EXISTS silver."Drivers";
+CREATE TABLE silver."Drivers" AS
+WITH ranked_drivers AS (
+    SELECT
+        driver_id,
+        TRIM(driver_name) AS driver_name,
+        REGEXP_REPLACE(contact_number, '[^0-9]', '', 'g') AS contact_number,
+        ROW_NUMBER() OVER(PARTITION BY driver_id ORDER BY driver_name DESC) as rn
+    FROM
+        bronze."Drivers"
+    WHERE
+        LOWER(driver_name) NOT LIKE '%%test%%'
+)
+SELECT
+    driver_id::INTEGER,
+    driver_name,
+    contact_number
+FROM
+    ranked_drivers
+WHERE
+    rn = 1;]
+(Background on this error at: https://sqlalche.me/e/14/2j85)
+2025-08-26 17:07:37,922 - INFO - ==================================================
+2025-08-26 17:11:45,630 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:11:45,630 - INFO - ==================================================
+2025-08-26 17:11:45,630 - INFO - === Starting Silver Layer Build Process ===
+2025-08-26 17:11:45,673 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 17:11:45,673 - INFO - --- Starting build of SILVER Layer ---
+2025-08-26 17:11:45,673 - INFO -   - Building silver table: Drivers...
+2025-08-26 17:11:45,740 - ERROR -     - Failed to execute /home/nineleaps/PycharmProjects/medallion-pipeline-new/sql/silver_drivers.sql. Error: 'Connection' object has no attribute 'commit'
+2025-08-26 17:11:45,740 - CRITICAL - Silver layer build failed. Error: 'Connection' object has no attribute 'commit'
+2025-08-26 17:11:45,740 - INFO - ==================================================
+2025-08-26 17:12:31,177 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:12:31,178 - INFO - ==================================================
+2025-08-26 17:12:31,178 - INFO - === Starting Silver Layer Build Process ===
+2025-08-26 17:12:31,228 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 17:12:31,228 - INFO - --- Starting build of SILVER Layer ---
+2025-08-26 17:12:31,228 - INFO -   - Building silver table: Drivers...
+2025-08-26 17:12:31,325 - INFO -     - DQ Check for Drivers: Bronze rows: 20000, Silver rows: 500, Rejected rows: 19500
+2025-08-26 17:12:31,326 - INFO -   - Building silver table: Vehicles...
+2025-08-26 17:12:31,384 - INFO -     - DQ Check for Vehicles: Bronze rows: 20000, Silver rows: 250, Rejected rows: 19750
+2025-08-26 17:12:31,385 - INFO -   - Building silver table: Customers...
+2025-08-26 17:12:31,532 - INFO -     - DQ Check for Customers: Bronze rows: 20000, Silver rows: 18982, Rejected rows: 1018
+2025-08-26 17:12:31,533 - INFO -   - Building silver table: Orders...
+2025-08-26 17:12:31,647 - INFO -     - DQ Check for Orders: Bronze rows: 20000, Silver rows: 16715, Rejected rows: 3285
+2025-08-26 17:12:31,648 - INFO -   - Building silver table: Shipments...
+2025-08-26 17:12:31,741 - INFO -     - DQ Check for Shipments: Bronze rows: 20000, Silver rows: 14320, Rejected rows: 5680
+2025-08-26 17:12:31,742 - INFO - --- SILVER Layer build completed. ---
+2025-08-26 17:12:31,742 - INFO - Silver layer build finished successfully.
+2025-08-26 17:12:31,742 - INFO - ==================================================
+2025-08-26 17:24:13,681 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:24:13,682 - INFO - ==================================================
+2025-08-26 17:24:13,682 - INFO - === Starting Silver Layer Build Process ===
+2025-08-26 17:24:13,720 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 17:24:13,721 - INFO - --- Starting build of SILVER Layer ---
+2025-08-26 17:24:13,721 - INFO -   - Building silver table: Drivers...
+2025-08-26 17:24:13,790 - INFO -     - DQ Check for Drivers: Bronze rows: 20000, Silver rows: 500, Rejected rows: 19500
+2025-08-26 17:24:13,790 - INFO -   - Building silver table: Vehicles...
+2025-08-26 17:24:13,845 - INFO -     - DQ Check for Vehicles: Bronze rows: 20000, Silver rows: 250, Rejected rows: 19750
+2025-08-26 17:24:13,846 - INFO -   - Building silver table: Customers...
+2025-08-26 17:24:13,977 - INFO -     - DQ Check for Customers: Bronze rows: 20000, Silver rows: 18982, Rejected rows: 1018
+2025-08-26 17:24:13,977 - INFO -   - Building silver table: Orders...
+2025-08-26 17:24:14,116 - INFO -     - DQ Check for Orders: Bronze rows: 20000, Silver rows: 16715, Rejected rows: 3285
+2025-08-26 17:24:14,116 - INFO -   - Building silver table: Shipments...
+2025-08-26 17:24:14,324 - INFO -     - DQ Check for Shipments: Bronze rows: 20000, Silver rows: 14320, Rejected rows: 5680
+2025-08-26 17:24:14,325 - INFO - --- SILVER Layer build completed. ---
+2025-08-26 17:24:14,325 - INFO - Silver layer build finished successfully.
+2025-08-26 17:24:14,326 - INFO - ==================================================

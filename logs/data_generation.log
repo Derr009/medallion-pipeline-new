@@ -1,0 +1,37 @@
+2025-08-26 17:37:04,119 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:37:04,120 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 17:37:04,166 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 17:37:07,045 - ERROR - An error occurred with the Apps Script API: <HttpError 404 when requesting https://script.googleapis.com/v1/scripts/1ZLa0lJvIGDB8piFmpHSEEEMML8IxURu0gzIvOmBC52bLcyweSNyeaEpi:run?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+2025-08-26 17:38:37,448 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:38:37,448 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 17:38:37,486 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 17:38:40,129 - ERROR - An error occurred with the Apps Script API: <HttpError 404 when requesting https://script.googleapis.com/v1/scripts/1ZLa0lJvIGDB8piFmpHSEEEMML8IxURu0gzIvOmBC52bLcyweSNyeaEpi:run?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+2025-08-26 17:56:01,866 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:56:01,867 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 17:56:01,905 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 17:56:04,323 - ERROR - An error occurred with the Apps Script API: <HttpError 404 when requesting https://script.googleapis.com/v1/scripts/1ZLa0lJvIGDB8piFmpHSEEEMML8IxURu0gzIvOmBC52bLcyweSNyeaEpi:run?alt=json returned "Requested entity was not found.". Details: "Requested entity was not found.">
+2025-08-26 18:02:14,678 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:02:14,679 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 18:02:14,718 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 18:02:17,586 - ERROR - An error occurred with the Apps Script API: <HttpError 400 when requesting https://script.googleapis.com/v1/scripts/AKfycbwAFm6yDrdrEew9Qam7WWj59R8oJnVVN7hOtPVGKNR4KmkemsmLe1l8sNDEnUPH2-4:run?alt=json returned "Request contains an invalid argument.". Details: "Request contains an invalid argument.">
+2025-08-26 18:06:04,778 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:06:04,779 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 18:06:04,817 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 18:06:07,257 - ERROR - An error occurred with the Apps Script API: <HttpError 400 when requesting https://script.googleapis.com/v1/scripts/AKfycbwAFm6yDrdrEew9Qam7WWj59R8oJnVVN7hOtPVGKNR4KmkemsmLe1l8sNDEnUPH2-4:run?alt=json returned "Request contains an invalid argument.". Details: "Request contains an invalid argument.">
+2025-08-26 18:08:27,629 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:08:27,630 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 18:08:27,669 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 18:08:30,244 - ERROR - An error occurred with the Apps Script API: <HttpError 400 when requesting https://script.googleapis.com/v1/scripts/AKfycbwAFm6yDrdrEew9Qam7WWj59R8oJnVVN7hOtPVGKNR4KmkemsmLe1l8sNDEnUPH2-4:run?alt=json returned "Request contains an invalid argument.". Details: "Request contains an invalid argument.">
+2025-08-26 18:10:11,577 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:10:11,577 - INFO - --- Triggering Google Apps Script for data generation ---
+2025-08-26 18:10:11,617 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 18:10:15,406 - ERROR - An error occurred with the Apps Script API: <HttpError 400 when requesting https://script.googleapis.com/v1/scripts/AKfycbwAFm6yDrdrEew9Qam7WWj59R8oJnVVN7hOtPVGKNR4KmkemsmLe1l8sNDEnUPH2-4:run?alt=json returned "Request contains an invalid argument.". Details: "Request contains an invalid argument.">
+2025-08-26 18:13:43,582 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:13:43,583 - INFO - --- Triggering Google Apps Script Web App ---
+2025-08-26 18:13:43,630 - ERROR - An error occurred while calling the Web App URL: HTTPSConnectionPool(host='script.google.com', port=443): Max retries exceeded with url: /a/macros/nineleaps.com/s/AKfycbxWcxu8teYS2NE6fMNg2XosaFzy3Fdx2n1e9lj9H9rUbXJDBazBNXjcgxRWB1tzfr8/exec (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 18:14:39,055 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:14:39,055 - INFO - --- Triggering Google Apps Script Web App ---
+2025-08-26 18:14:42,126 - ERROR - An error occurred while calling the Web App URL: 401 Client Error: Unauthorized for url: https://script.google.com/a/macros/nineleaps.com/s/AKfycbxWcxu8teYS2NE6fMNg2XosaFzy3Fdx2n1e9lj9H9rUbXJDBazBNXjcgxRWB1tzfr8/exec
+2025-08-26 18:16:35,496 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 18:16:35,496 - INFO - --- Triggering Google Apps Script Web App ---
+2025-08-26 18:16:36,193 - ERROR - An error occurred while calling the Web App URL: 401 Client Error: Unauthorized for url: https://script.google.com/a/macros/nineleaps.com/s/AKfycbxWcxu8teYS2NE6fMNg2XosaFzy3Fdx2n1e9lj9H9rUbXJDBazBNXjcgxRWB1tzfr8/exec

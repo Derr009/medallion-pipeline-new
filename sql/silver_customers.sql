@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver."Customers";
+DROP TABLE IF EXISTS silver."Customers" CASCADE;
 CREATE TABLE silver."Customers" AS
 WITH ranked_customers AS (
     SELECT

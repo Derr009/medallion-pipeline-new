@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver."Drivers";
+DROP TABLE IF EXISTS silver."Drivers" CASCADE;
 CREATE TABLE silver."Drivers" AS
 WITH ranked_drivers AS (
     SELECT

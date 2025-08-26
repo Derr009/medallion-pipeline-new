@@ -4,3 +4,11 @@
 2025-08-25 15:59:53,582 - INFO - Applying constraints from /home/nineleaps/PycharmProjects/medallion-pipeline-new/sql/silver_add_constraints.sql...
 2025-08-25 15:59:53,625 - INFO - Successfully applied all constraints.
 2025-08-25 15:59:53,625 - INFO - ==================================================
+2025-08-26 17:24:15,656 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:24:15,660 - INFO - ==================================================
+2025-08-26 17:24:15,660 - INFO - === Starting Add Constraints Process ===
+2025-08-26 17:24:15,710 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 17:24:15,710 - INFO - Applying constraints from /home/nineleaps/PycharmProjects/medallion-pipeline-new/sql/silver_add_constraints.sql...
+2025-08-26 17:24:15,833 - ERROR - Failed to apply constraints. Error: 'Connection' object has no attribute 'commit'
+2025-08-26 17:24:15,833 - CRITICAL - Process failed. Error: 'Connection' object has no attribute 'commit'
+2025-08-26 17:24:15,833 - INFO - ==================================================

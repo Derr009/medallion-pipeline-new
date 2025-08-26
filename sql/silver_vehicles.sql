@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver."Vehicles";
+DROP TABLE IF EXISTS silver."Vehicles" CASCADE;
 CREATE TABLE silver."Vehicles" AS
 WITH ranked_vehicles AS (
     SELECT

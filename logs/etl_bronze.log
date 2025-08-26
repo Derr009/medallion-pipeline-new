@@ -40,3 +40,341 @@
 2025-08-25 12:36:38,534 - INFO - --- LOAD step completed successfully. ---
 2025-08-25 12:36:38,534 - INFO - Pipeline run finished successfully.
 2025-08-25 12:36:38,534 - INFO - ==================================================
+2025-08-26 15:03:21,951 - INFO - ==================================================
+2025-08-26 15:03:21,951 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:03:21,951 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:03:22,053 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:03:22,096 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:03:22,144 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:03:22,196 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:03:22,197 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:03:22,197 - INFO - ==================================================
+2025-08-26 15:07:17,684 - INFO - ==================================================
+2025-08-26 15:07:17,684 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:07:17,684 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:07:17,773 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:07:17,817 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:07:17,861 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:07:17,906 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:07:17,906 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:07:17,907 - INFO - ==================================================
+2025-08-26 15:08:39,354 - INFO - ==================================================
+2025-08-26 15:08:39,354 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:08:39,354 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:08:39,392 - ERROR - An error occurred during the extraction phase. Error: 'Client' object has no attribute 'session'
+2025-08-26 15:08:39,392 - CRITICAL - Pipeline run failed. Error: 'Client' object has no attribute 'session'
+2025-08-26 15:08:39,392 - INFO - ==================================================
+2025-08-26 15:09:41,813 - INFO - ==================================================
+2025-08-26 15:09:41,813 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:09:41,813 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:09:41,899 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:09:41,942 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:09:41,984 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:09:42,026 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:09:42,026 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:09:42,026 - INFO - ==================================================
+2025-08-26 15:10:40,817 - INFO - ==================================================
+2025-08-26 15:10:40,817 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:10:40,817 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:10:41,002 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:10:41,047 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:10:41,096 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:10:41,154 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:10:41,154 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:10:41,154 - INFO - ==================================================
+2025-08-26 15:12:42,994 - INFO - ==================================================
+2025-08-26 15:12:42,994 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:12:42,994 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:12:43,031 - ERROR - An error occurred during the extraction phase. Error: 'Client' object has no attribute 'auth'
+2025-08-26 15:12:43,032 - CRITICAL - Pipeline run failed. Error: 'Client' object has no attribute 'auth'
+2025-08-26 15:12:43,032 - INFO - ==================================================
+2025-08-26 15:14:11,594 - INFO - ==================================================
+2025-08-26 15:14:11,594 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:14:11,594 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:14:11,679 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:14:11,740 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:14:11,784 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:14:12,826 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:14:12,826 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:14:12,826 - INFO - ==================================================
+2025-08-26 15:19:28,595 - INFO - ==================================================
+2025-08-26 15:19:28,595 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:19:28,595 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:19:28,595 - ERROR - An error occurred during the extraction phase. Error: cannot import name 'BackoffClient' from 'gspread.http_client' (/home/nineleaps/.local/lib/python3.10/site-packages/gspread/http_client.py)
+2025-08-26 15:19:28,595 - CRITICAL - Pipeline run failed. Error: cannot import name 'BackoffClient' from 'gspread.http_client' (/home/nineleaps/.local/lib/python3.10/site-packages/gspread/http_client.py)
+2025-08-26 15:19:28,595 - INFO - ==================================================
+2025-08-26 15:20:37,169 - INFO - ==================================================
+2025-08-26 15:20:37,169 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:20:37,169 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:20:37,826 - ERROR - An error occurred during the extraction phase. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 15:20:37,826 - CRITICAL - Pipeline run failed. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 15:20:37,826 - INFO - ==================================================
+2025-08-26 15:22:50,936 - INFO - ==================================================
+2025-08-26 15:22:50,937 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:22:50,937 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:22:50,974 - ERROR - An error occurred during the extraction phase. Error: name 'httplib2' is not defined
+2025-08-26 15:22:50,974 - CRITICAL - Pipeline run failed. Error: name 'httplib2' is not defined
+2025-08-26 15:22:50,974 - INFO - ==================================================
+2025-08-26 15:23:18,722 - INFO - ==================================================
+2025-08-26 15:23:18,722 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:23:18,722 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:23:18,763 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 15:23:18,822 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:23:18,869 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:23:18,913 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:23:18,997 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:23:18,997 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:23:18,997 - INFO - ==================================================
+2025-08-26 15:24:45,234 - INFO - ==================================================
+2025-08-26 15:24:45,234 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:24:45,234 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:24:45,272 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-26 15:24:45,274 - INFO - Google Sheets service created successfully (SSL verification disabled)
+2025-08-26 15:24:45,343 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:24:45,392 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:24:45,443 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:24:45,488 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:24:45,488 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:24:45,488 - INFO - ==================================================
+2025-08-26 15:25:13,264 - INFO - ==================================================
+2025-08-26 15:25:13,264 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:25:13,264 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:25:13,374 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:25:13,430 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:25:13,473 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:25:13,532 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:25:13,532 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:25:13,532 - INFO - ==================================================
+2025-08-26 15:28:36,685 - INFO - ==================================================
+2025-08-26 15:28:36,686 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:28:36,686 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:28:36,798 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:28:36,840 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:28:36,882 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:28:36,927 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:28:36,927 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:28:36,928 - INFO - ==================================================
+2025-08-26 15:30:48,397 - INFO - ==================================================
+2025-08-26 15:30:48,397 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:30:48,397 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:30:48,435 - WARNING - REQUESTS_CA_BUNDLE not set or file not found. Falling back to unverified SSL for Google API calls (httplib2 with disable_ssl_certificate_validation=True). This is suitable for trusted corporate networks but NOT recommended for production Internet use.
+2025-08-26 15:30:48,435 - INFO - Opening Google Sheet by Name: 'Logistics Data'.
+2025-08-26 15:30:48,519 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:30:48,562 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:30:48,638 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:30:48,685 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:30:48,685 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:30:48,685 - INFO - ==================================================
+2025-08-26 15:33:33,573 - INFO - ==================================================
+2025-08-26 15:33:33,573 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 15:33:33,574 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 15:33:33,611 - WARNING - REQUESTS_CA_BUNDLE not set or file not found. Falling back to unverified SSL for Google API calls (httplib2 with disable_ssl_certificate_validation=True). This is suitable for trusted corporate networks but NOT recommended for production Internet use.
+2025-08-26 15:33:33,611 - INFO - Opening Google Sheet by Name: 'Logistics Data'.
+2025-08-26 15:33:33,661 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:33:33,705 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:33:33,785 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:33:33,827 - ERROR - An error occurred during the extraction phase. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:33:33,827 - CRITICAL - Pipeline run failed. Error: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:33:33,828 - INFO - ==================================================
+2025-08-26 15:36:10,817 - INFO - ==================================================
+2025-08-26 15:36:10,817 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:36:10,817 - INFO - --- Starting EXTRACT step ---
+2025-08-26 15:36:10,854 - WARNING - REQUESTS_CA_BUNDLE not set/found. Using unverified SSL for Google API calls.
+2025-08-26 15:36:10,854 - INFO - Opening Google Sheet by Name: 'Logistics Data'.
+2025-08-26 15:36:10,921 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:36:11,844 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:36:11,902 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:36:11,996 - ERROR - Extraction failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:36:11,996 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:36:11,996 - INFO - ==================================================
+2025-08-26 15:37:40,151 - INFO - ==================================================
+2025-08-26 15:37:40,151 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:37:40,151 - INFO - --- Starting EXTRACT step (SSL bypass) ---
+2025-08-26 15:37:40,190 - WARNING - Using unverified SSL for Google API calls.
+2025-08-26 15:37:40,190 - INFO - Opening Google Sheet by Name: 'Logistics Data'.
+2025-08-26 15:37:40,248 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:37:40,291 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:37:40,345 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:37:40,450 - ERROR - Extraction failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:37:40,450 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:37:40,450 - INFO - ==================================================
+2025-08-26 15:51:10,700 - INFO - ==================================================
+2025-08-26 15:51:10,700 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:51:10,700 - INFO - --- Starting EXTRACT step ---
+2025-08-26 15:51:10,738 - WARNING - No custom CA certificate provided; using default SSL verification.
+2025-08-26 15:51:10,738 - INFO - Gspread client initialized successfully.
+2025-08-26 15:51:10,738 - INFO - Opening Google Sheet by Name: 'Logistics Data'
+2025-08-26 15:51:11,205 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:51:13,250 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:51:17,299 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:51:17,344 - ERROR - Failed to open spreadsheet: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:51:17,344 - ERROR - Extraction step failed: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:51:17,344 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:51:17,344 - INFO - ==================================================
+2025-08-26 15:53:06,806 - INFO - __main__ - ==================================================
+2025-08-26 15:53:06,806 - INFO - __main__ - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:53:06,806 - INFO - __main__ - --- Starting EXTRACT step ---
+2025-08-26 15:53:06,845 - INFO - __main__ - Using default SSL verification (no custom CA certificate provided).
+2025-08-26 15:53:06,845 - INFO - __main__ - Gspread client initialized successfully.
+2025-08-26 15:53:06,846 - INFO - __main__ - Opening Google Sheet by Name: 'Logistics Data'
+2025-08-26 15:53:06,893 - WARNING - urllib3.connectionpool - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:53:08,944 - WARNING - urllib3.connectionpool - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:53:13,012 - WARNING - urllib3.connectionpool - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29
+2025-08-26 15:53:13,056 - ERROR - __main__ - Failed to open spreadsheet: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:53:13,056 - ERROR - __main__ - Extraction step failed: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:53:13,056 - CRITICAL - __main__ - Pipeline failed: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Logistics+Data%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:53:13,056 - INFO - __main__ - ==================================================
+2025-08-26 15:53:45,106 - INFO - ==================================================
+2025-08-26 15:53:45,106 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:53:45,106 - INFO - --- Starting EXTRACT step (SSL bypass) ---
+2025-08-26 15:53:45,143 - WARNING - ⚠️ Using unverified SSL for Google API calls (suitable for trusted networks only).
+2025-08-26 15:53:45,143 - INFO - Opening Google Sheet by Name: 'Logistics Data'.
+2025-08-26 15:53:45,211 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:53:45,259 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:53:45,304 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:53:45,370 - ERROR - Extraction failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:53:45,370 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:53:45,370 - INFO - ==================================================
+2025-08-26 15:56:02,003 - INFO - ==================================================
+2025-08-26 15:56:02,003 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:56:02,004 - INFO - --- Starting EXTRACT step (SSL bypass) ---
+2025-08-26 15:56:02,043 - WARNING - ⚠️ Using unverified SSL for Google API calls (trusted networks only).
+2025-08-26 15:56:02,043 - INFO - Opening sheet by Name: Logistics Data
+2025-08-26 15:56:02,090 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:56:02,135 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:56:02,185 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:56:02,230 - ERROR - Extraction failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:56:02,230 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:56:02,230 - INFO - ==================================================
+2025-08-26 15:59:24,123 - INFO - ==================================================
+2025-08-26 15:59:24,123 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 15:59:24,123 - INFO - --- Starting EXTRACT step (SSL bypass) ---
+2025-08-26 15:59:24,161 - WARNING - ⚠️ Using unverified SSL for Google API calls (trusted networks only).
+2025-08-26 15:59:24,161 - INFO - Opening sheet by Name: Logistics Data
+2025-08-26 15:59:26,294 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:59:26,387 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:59:26,493 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)'))': /token
+2025-08-26 15:59:26,583 - ERROR - Extraction failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:59:26,583 - CRITICAL - Pipeline failed: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))
+2025-08-26 15:59:26,584 - INFO - ==================================================
+2025-08-26 16:03:08,055 - INFO - ==================================================
+2025-08-26 16:03:08,055 - INFO - === Starting Bronze Layer ETL Run ===
+2025-08-26 16:03:08,056 - INFO - --- Starting EXTRACT step (SSL bypass) ---
+2025-08-26 16:03:08,093 - WARNING - ⚠️ Using unverified SSL for Google API calls (trusted networks only).
+2025-08-26 16:03:08,093 - INFO - Opening sheet by Name: Logistics Data
+2025-08-26 16:03:11,157 - INFO - Connected to Google Sheet.
+2025-08-26 16:03:13,549 - INFO -   - Customers: 20000 rows, checksum 7c6d3241...
+2025-08-26 16:03:16,048 - INFO -   - Orders: 20000 rows, checksum 89c14a91...
+2025-08-26 16:03:18,882 - INFO -   - Shipments: 20000 rows, checksum 030149b7...
+2025-08-26 16:03:20,688 - INFO -   - Drivers: 20000 rows, checksum 54a96088...
+2025-08-26 16:03:22,042 - INFO -   - Vehicles: 20000 rows, checksum 8f9e01f0...
+2025-08-26 16:03:22,042 - INFO - --- EXTRACT step done ---
+2025-08-26 16:03:22,114 - INFO - Successfully connected to PostgreSQL.
+2025-08-26 16:03:22,114 - INFO - --- Starting LOAD step ---
+2025-08-26 16:03:22,116 - CRITICAL - Pipeline failed: 'Connection' object has no attribute 'commit'
+2025-08-26 16:03:22,116 - INFO - ==================================================
+2025-08-26 16:07:27,888 - INFO - ==================================================
+2025-08-26 16:07:27,888 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:07:27,888 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 16:07:30,132 - INFO - Successfully connected to Google Sheet: 'Logistics Data'
+2025-08-26 16:07:32,086 - INFO -   - Extracted 'Customers' to CSV. Rows: 20000, Checksum: 7c6d3241...
+2025-08-26 16:07:34,177 - INFO -   - Extracted 'Orders' to CSV. Rows: 20000, Checksum: 89c14a91...
+2025-08-26 16:07:36,583 - INFO -   - Extracted 'Shipments' to CSV. Rows: 20000, Checksum: 030149b7...
+2025-08-26 16:07:38,285 - INFO -   - Extracted 'Drivers' to CSV. Rows: 20000, Checksum: 54a96088...
+2025-08-26 16:07:40,155 - INFO -   - Extracted 'Vehicles' to CSV. Rows: 20000, Checksum: 8f9e01f0...
+2025-08-26 16:07:40,155 - INFO - --- EXTRACT step completed successfully. ---
+2025-08-26 16:07:40,191 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-26 16:07:40,191 - INFO - --- Starting LOAD step: CSV to Bronze Layer (Full Replace) ---
+2025-08-26 16:07:40,192 - CRITICAL - Pipeline run failed. Error: 'Connection' object has no attribute 'commit'
+2025-08-26 16:07:40,192 - INFO - ==================================================
+2025-08-26 16:09:14,115 - INFO - ==================================================
+2025-08-26 16:09:14,115 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:09:14,115 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 16:09:14,986 - ERROR - An error occurred during the extraction phase. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:09:14,986 - CRITICAL - Pipeline run failed. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:09:14,986 - INFO - ==================================================
+2025-08-26 16:14:24,487 - INFO - ==================================================
+2025-08-26 16:14:24,487 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:14:24,487 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 16:14:25,469 - ERROR - An error occurred during the extraction phase. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:14:25,469 - CRITICAL - Pipeline run failed. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:14:25,469 - INFO - ==================================================
+2025-08-26 16:15:40,410 - INFO - ==================================================
+2025-08-26 16:15:40,410 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:15:40,410 - INFO - --- Starting EXTRACT step: Full extraction from Google Sheets ---
+2025-08-26 16:15:40,940 - ERROR - An error occurred during the extraction phase. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:15:40,940 - CRITICAL - Pipeline run failed. Error: APIError: [403]: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.
+2025-08-26 16:15:40,940 - INFO - ==================================================
+2025-08-26 16:18:30,229 - WARNING - python-dotenv could not parse statement starting at line 7
+2025-08-26 16:18:30,229 - INFO - ==================================================
+2025-08-26 16:18:30,229 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:18:30,229 - INFO - --- Starting EXTRACT step ---
+2025-08-26 16:18:30,267 - ERROR - Extraction failed: Set GSPREAD_SHEET_ID in .env
+2025-08-26 16:18:30,267 - CRITICAL - Pipeline failed: Set GSPREAD_SHEET_ID in .env
+2025-08-26 16:18:30,267 - INFO - ==================================================
+2025-08-26 16:19:10,138 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 16:19:10,138 - INFO - ==================================================
+2025-08-26 16:19:10,138 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 16:19:10,138 - INFO - --- Starting EXTRACT step ---
+2025-08-26 16:19:10,177 - INFO - Opening Google Sheet by ID.
+2025-08-26 16:19:13,441 - INFO - Extracted 'Customers' → CSV, rows: 20000, checksum: 7c6d3241...
+2025-08-26 16:19:15,412 - INFO - Extracted 'Orders' → CSV, rows: 20000, checksum: 89c14a91...
+2025-08-26 16:19:17,629 - INFO - Extracted 'Shipments' → CSV, rows: 20000, checksum: 030149b7...
+2025-08-26 16:19:19,030 - INFO - Extracted 'Drivers' → CSV, rows: 20000, checksum: 54a96088...
+2025-08-26 16:19:20,999 - INFO - Extracted 'Vehicles' → CSV, rows: 20000, checksum: 8f9e01f0...
+2025-08-26 16:19:21,000 - INFO - --- EXTRACT completed ---
+2025-08-26 16:19:21,036 - INFO - Connected to PostgreSQL database.
+2025-08-26 16:19:21,036 - INFO - --- Starting LOAD step ---
+2025-08-26 16:19:21,037 - INFO - Schema 'bronze' exists or created.
+2025-08-26 16:19:21,404 - INFO - Loaded 20000 rows into bronze.Customers
+2025-08-26 16:19:21,646 - INFO - Loaded 20000 rows into bronze.Orders
+2025-08-26 16:19:22,080 - INFO - Loaded 20000 rows into bronze.Shipments
+2025-08-26 16:19:22,303 - INFO - Loaded 20000 rows into bronze.Drivers
+2025-08-26 16:19:22,489 - INFO - Loaded 20000 rows into bronze.Vehicles
+2025-08-26 16:19:22,489 - INFO - --- LOAD completed ---
+2025-08-26 16:19:22,489 - INFO - Pipeline finished successfully.
+2025-08-26 16:19:22,489 - INFO - ==================================================
+2025-08-26 17:23:07,222 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:23:07,222 - INFO - ==================================================
+2025-08-26 17:23:07,222 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 17:23:07,222 - INFO - --- Starting EXTRACT step ---
+2025-08-26 17:23:07,259 - INFO - Opening Google Sheet by ID.
+2025-08-26 17:23:13,711 - INFO - Extracted 'Customers' → CSV, rows: 20000, checksum: 7c6d3241...
+2025-08-26 17:23:15,958 - INFO - Extracted 'Orders' → CSV, rows: 20000, checksum: 89c14a91...
+2025-08-26 17:23:18,422 - INFO - Extracted 'Shipments' → CSV, rows: 20000, checksum: 030149b7...
+2025-08-26 17:23:20,370 - INFO - Extracted 'Drivers' → CSV, rows: 20000, checksum: 54a96088...
+2025-08-26 17:23:22,196 - INFO - Extracted 'Vehicles' → CSV, rows: 20000, checksum: 8f9e01f0...
+2025-08-26 17:23:22,196 - INFO - --- EXTRACT completed ---
+2025-08-26 17:23:22,235 - INFO - Connected to PostgreSQL database.
+2025-08-26 17:23:22,235 - INFO - --- Starting LOAD step ---
+2025-08-26 17:23:22,236 - INFO - Schema 'bronze' exists or created.
+2025-08-26 17:23:22,636 - INFO - Loaded 20000 rows into bronze.Customers
+2025-08-26 17:23:22,945 - INFO - Loaded 20000 rows into bronze.Orders
+2025-08-26 17:23:23,528 - INFO - Loaded 20000 rows into bronze.Shipments
+2025-08-26 17:23:23,783 - INFO - Loaded 20000 rows into bronze.Drivers
+2025-08-26 17:23:24,034 - INFO - Loaded 20000 rows into bronze.Vehicles
+2025-08-26 17:23:24,034 - INFO - --- LOAD completed ---
+2025-08-26 17:23:24,034 - INFO - Pipeline finished successfully.
+2025-08-26 17:23:24,034 - INFO - ==================================================
+2025-08-26 17:24:00,208 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 17:24:00,209 - INFO - ==================================================
+2025-08-26 17:24:00,209 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-26 17:24:00,209 - INFO - --- Starting EXTRACT step ---
+2025-08-26 17:24:00,250 - INFO - Opening Google Sheet by ID.
+2025-08-26 17:24:03,103 - INFO - Extracted 'Customers' → CSV, rows: 20000, checksum: 7c6d3241...
+2025-08-26 17:24:05,264 - INFO - Extracted 'Orders' → CSV, rows: 20000, checksum: 89c14a91...
+2025-08-26 17:24:07,483 - INFO - Extracted 'Shipments' → CSV, rows: 20000, checksum: 030149b7...
+2025-08-26 17:24:09,055 - INFO - Extracted 'Drivers' → CSV, rows: 20000, checksum: 54a96088...
+2025-08-26 17:24:10,782 - INFO - Extracted 'Vehicles' → CSV, rows: 20000, checksum: 8f9e01f0...
+2025-08-26 17:24:10,782 - INFO - --- EXTRACT completed ---
+2025-08-26 17:24:10,821 - INFO - Connected to PostgreSQL database.
+2025-08-26 17:24:10,821 - INFO - --- Starting LOAD step ---
+2025-08-26 17:24:10,822 - INFO - Schema 'bronze' exists or created.
+2025-08-26 17:24:11,189 - INFO - Loaded 20000 rows into bronze.Customers
+2025-08-26 17:24:11,426 - INFO - Loaded 20000 rows into bronze.Orders
+2025-08-26 17:24:11,891 - INFO - Loaded 20000 rows into bronze.Shipments
+2025-08-26 17:24:12,130 - INFO - Loaded 20000 rows into bronze.Drivers
+2025-08-26 17:24:12,314 - INFO - Loaded 20000 rows into bronze.Vehicles
+2025-08-26 17:24:12,314 - INFO - --- LOAD completed ---
+2025-08-26 17:24:12,314 - INFO - Pipeline finished successfully.
+2025-08-26 17:24:12,314 - INFO - ==================================================
