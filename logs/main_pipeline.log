@@ -25,3 +25,27 @@
 2025-08-26 17:24:17,675 - INFO - Successfully completed build_gold.py.
 2025-08-26 17:24:17,675 - INFO - === Full Medallion Pipeline Run Finished ===
 2025-08-26 17:24:17,675 - INFO - ==================================================
+2025-08-27 17:02:15,190 - INFO - ==================================================
+2025-08-27 17:02:15,191 - INFO - === Starting Full End-to-End Medallion Pipeline Run ===
+2025-08-27 17:02:15,191 - INFO - --- Running script: push_to_bronze.py ---
+2025-08-27 17:02:28,923 - INFO - Successfully completed push_to_bronze.py.
+2025-08-27 17:02:28,923 - INFO - --- Running script: push_to_silver.py ---
+2025-08-27 17:02:30,784 - INFO - Successfully completed push_to_silver.py.
+2025-08-27 17:02:30,784 - INFO - --- Running script: add_constraints.py ---
+2025-08-27 17:02:32,194 - INFO - Successfully completed add_constraints.py.
+2025-08-27 17:02:32,194 - INFO - --- Running script: build_gold.py ---
+2025-08-27 17:02:33,673 - INFO - Successfully completed build_gold.py.
+2025-08-27 17:02:33,673 - INFO - === Full End-to-End Medallion Pipeline Run Finished ===
+2025-08-27 17:02:33,673 - INFO - ==================================================
+2025-08-27 17:05:03,165 - INFO - ==================================================
+2025-08-27 17:05:03,165 - INFO - === Starting Full End-to-End Medallion Pipeline Run ===
+2025-08-27 17:05:03,166 - INFO - --- Running script: push_to_bronze.py ---
+2025-08-27 17:05:19,708 - INFO - Successfully completed push_to_bronze.py.
+2025-08-27 17:05:19,708 - INFO - --- Running script: push_to_silver.py ---
+2025-08-27 17:05:22,227 - INFO - Successfully completed push_to_silver.py.
+2025-08-27 17:05:22,227 - INFO - --- Running script: add_constraints.py ---
+2025-08-27 17:05:23,664 - INFO - Successfully completed add_constraints.py.
+2025-08-27 17:05:23,664 - INFO - --- Running script: build_gold.py ---
+2025-08-27 17:05:25,225 - INFO - Successfully completed build_gold.py.
+2025-08-27 17:05:25,225 - INFO - === Full End-to-End Medallion Pipeline Run Finished ===
+2025-08-27 17:05:25,225 - INFO - ==================================================

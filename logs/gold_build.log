@@ -75,3 +75,31 @@
 2025-08-26 20:25:58,919 - INFO - --- GOLD Layer build completed. ---
 2025-08-26 20:25:58,919 - INFO - Gold layer build finished successfully.
 2025-08-26 20:25:58,919 - INFO - ==================================================
+2025-08-27 17:02:33,340 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-27 17:02:33,340 - INFO - ==================================================
+2025-08-27 17:02:33,340 - INFO - === Starting Gold Layer Build Process ===
+2025-08-27 17:02:33,377 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-27 17:02:33,377 - INFO - --- Starting build of GOLD Layer ---
+2025-08-27 17:02:33,377 - INFO -   - Building gold table: gold_monthly_driver_performance...
+2025-08-27 17:02:33,425 - INFO -     - Successfully built gold_monthly_driver_performance.
+2025-08-27 17:02:33,425 - INFO -   - Building gold table: gold_vehicle_utilization_summary...
+2025-08-27 17:02:33,457 - INFO -     - Successfully built gold_vehicle_utilization_summary.
+2025-08-27 17:02:33,458 - INFO -   - Building gold table: gold_full_shipment_details...
+2025-08-27 17:02:33,516 - INFO -     - Successfully built gold_full_shipment_details.
+2025-08-27 17:02:33,517 - INFO - --- GOLD Layer build completed. ---
+2025-08-27 17:02:33,517 - INFO - Gold layer build finished successfully.
+2025-08-27 17:02:33,517 - INFO - ==================================================
+2025-08-27 17:05:24,789 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-27 17:05:24,789 - INFO - ==================================================
+2025-08-27 17:05:24,789 - INFO - === Starting Gold Layer Build Process ===
+2025-08-27 17:05:24,823 - INFO - Successfully connected to the PostgreSQL database.
+2025-08-27 17:05:24,824 - INFO - --- Starting build of GOLD Layer ---
+2025-08-27 17:05:24,824 - INFO -   - Building gold table: gold_monthly_driver_performance...
+2025-08-27 17:05:24,888 - INFO -     - Successfully built gold_monthly_driver_performance.
+2025-08-27 17:05:24,889 - INFO -   - Building gold table: gold_vehicle_utilization_summary...
+2025-08-27 17:05:24,936 - INFO -     - Successfully built gold_vehicle_utilization_summary.
+2025-08-27 17:05:24,937 - INFO -   - Building gold table: gold_full_shipment_details...
+2025-08-27 17:05:25,066 - INFO -     - Successfully built gold_full_shipment_details.
+2025-08-27 17:05:25,066 - INFO - --- GOLD Layer build completed. ---
+2025-08-27 17:05:25,066 - INFO - Gold layer build finished successfully.
+2025-08-27 17:05:25,066 - INFO - ==================================================

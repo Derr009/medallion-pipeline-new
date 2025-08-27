@@ -58,7 +58,7 @@ def run_script(script_name):
 def main():
     """Main function to run the entire ETL pipeline in sequence."""
     logging.info("==================================================")
-    logging.info("=== Starting Full End-to-End Medallion Pipeline Run ===")
+    logging.info("=== Starting Pipeline Run ===")
 
     # Define the order of the scripts to be executed
     pipeline_steps = [ # Step 0: Generate new.ipynb data
@@ -74,7 +74,7 @@ def main():
             logging.critical("Pipeline halted due to a failed step.")
             break  # Stop the pipeline if any script fails
 
-    logging.info("=== Full End-to-End Medallion Pipeline Run Finished ===")
+    logging.info("=== Full Pipeline Run Finished ===")
     logging.info("==================================================")
 
 
