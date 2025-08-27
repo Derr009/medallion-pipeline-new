@@ -35,3 +35,6 @@
 2025-08-26 18:16:35,496 - WARNING - python-dotenv could not parse statement starting at line 8
 2025-08-26 18:16:35,496 - INFO - --- Triggering Google Apps Script Web App ---
 2025-08-26 18:16:36,193 - ERROR - An error occurred while calling the Web App URL: 401 Client Error: Unauthorized for url: https://script.google.com/a/macros/nineleaps.com/s/AKfycbxWcxu8teYS2NE6fMNg2XosaFzy3Fdx2n1e9lj9H9rUbXJDBazBNXjcgxRWB1tzfr8/exec
+2025-08-26 19:53:20,447 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-26 19:53:20,448 - INFO - --- Triggering Google Apps Script Web App ---
+2025-08-26 19:53:23,279 - ERROR - An error occurred while calling the Web App URL: 401 Client Error: Unauthorized for url: https://script.google.com/a/macros/nineleaps.com/s/AKfycbxWcxu8teYS2NE6fMNg2XosaFzy3Fdx2n1e9lj9H9rUbXJDBazBNXjcgxRWB1tzfr8/exec
