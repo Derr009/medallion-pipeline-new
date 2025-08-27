@@ -68,8 +68,7 @@ def execute_sql_from_file(engine, filepath, table_name_lower):
             # Execute the main silver build script
             connection.execute(text("CREATE SCHEMA IF NOT EXISTS silver;"))
             connection.execute(text(sql_script))
-            # --- FIX: The line below was removed as it's handled automatically ---
-            # connection.commit()
+
 
             # Get count from silver table after transformation
             silver_count_query = f'SELECT COUNT(*) FROM silver."{table_name_cased}";'
@@ -90,7 +89,7 @@ def execute_sql_from_file(engine, filepath, table_name_lower):
 
 def build_silver_layer(engine):
     """
-    Executes all SQL scripts in the /sql directory to build the Silver layer.
+    Executing all SQL scripts in the /sql directory to build the Silver layer.
     """
     logging.info("--- Starting build of SILVER Layer ---")
 

@@ -94,7 +94,7 @@ def build_gspread_client():
 
 
 def open_spreadsheet(gc):
-    """Open spreadsheet by ID (preferred)."""
+    """Open spreadsheet by ID """
     if not SHEET_ID:
         raise ValueError("Set GSPREAD_SHEET_ID in .env")
     logging.info(f"Opening Google Sheet by ID.")

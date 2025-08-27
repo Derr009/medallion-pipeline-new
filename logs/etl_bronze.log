@@ -400,3 +400,47 @@
 2025-08-26 21:25:48,260 - INFO - --- LOAD completed ---
 2025-08-26 21:25:48,261 - INFO - Pipeline finished successfully.
 2025-08-26 21:25:48,261 - INFO - ==================================================
+2025-08-27 17:02:16,578 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-27 17:02:16,578 - INFO - ==================================================
+2025-08-27 17:02:16,578 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-27 17:02:16,578 - INFO - --- Starting EXTRACT step ---
+2025-08-27 17:02:16,619 - INFO - Opening Google Sheet by ID.
+2025-08-27 17:02:19,701 - INFO - Extracted 'Customers' → CSV, rows: 20000, checksum: 7c6d3241...
+2025-08-27 17:02:21,569 - INFO - Extracted 'Orders' → CSV, rows: 20000, checksum: 89c14a91...
+2025-08-27 17:02:23,820 - INFO - Extracted 'Shipments' → CSV, rows: 20000, checksum: 030149b7...
+2025-08-27 17:02:25,426 - INFO - Extracted 'Drivers' → CSV, rows: 20000, checksum: 54a96088...
+2025-08-27 17:02:27,183 - INFO - Extracted 'Vehicles' → CSV, rows: 20000, checksum: 8f9e01f0...
+2025-08-27 17:02:27,183 - INFO - --- EXTRACT completed ---
+2025-08-27 17:02:27,220 - INFO - Connected to PostgreSQL database.
+2025-08-27 17:02:27,220 - INFO - --- Starting LOAD step ---
+2025-08-27 17:02:27,222 - INFO - Schema 'bronze' exists or created.
+2025-08-27 17:02:27,615 - INFO - Loaded 20000 rows into bronze.Customers
+2025-08-27 17:02:27,861 - INFO - Loaded 20000 rows into bronze.Orders
+2025-08-27 17:02:28,304 - INFO - Loaded 20000 rows into bronze.Shipments
+2025-08-27 17:02:28,537 - INFO - Loaded 20000 rows into bronze.Drivers
+2025-08-27 17:02:28,723 - INFO - Loaded 20000 rows into bronze.Vehicles
+2025-08-27 17:02:28,723 - INFO - --- LOAD completed ---
+2025-08-27 17:02:28,724 - INFO - Pipeline finished successfully.
+2025-08-27 17:02:28,724 - INFO - ==================================================
+2025-08-27 17:05:04,458 - WARNING - python-dotenv could not parse statement starting at line 8
+2025-08-27 17:05:04,459 - INFO - ==================================================
+2025-08-27 17:05:04,459 - INFO - === Starting Bronze Layer Full Refresh Pipeline Run ===
+2025-08-27 17:05:04,459 - INFO - --- Starting EXTRACT step ---
+2025-08-27 17:05:04,499 - INFO - Opening Google Sheet by ID.
+2025-08-27 17:05:07,716 - INFO - Extracted 'Customers' → CSV, rows: 30000, checksum: 738c0e16...
+2025-08-27 17:05:10,003 - INFO - Extracted 'Orders' → CSV, rows: 30000, checksum: 6c4de062...
+2025-08-27 17:05:12,886 - INFO - Extracted 'Shipments' → CSV, rows: 30000, checksum: b26bad51...
+2025-08-27 17:05:15,080 - INFO - Extracted 'Drivers' → CSV, rows: 30000, checksum: 286d55b2...
+2025-08-27 17:05:17,214 - INFO - Extracted 'Vehicles' → CSV, rows: 30000, checksum: e5e9b83b...
+2025-08-27 17:05:17,214 - INFO - --- EXTRACT completed ---
+2025-08-27 17:05:17,250 - INFO - Connected to PostgreSQL database.
+2025-08-27 17:05:17,251 - INFO - --- Starting LOAD step ---
+2025-08-27 17:05:17,251 - INFO - Schema 'bronze' exists or created.
+2025-08-27 17:05:17,765 - INFO - Loaded 30000 rows into bronze.Customers
+2025-08-27 17:05:18,254 - INFO - Loaded 30000 rows into bronze.Orders
+2025-08-27 17:05:18,896 - INFO - Loaded 30000 rows into bronze.Shipments
+2025-08-27 17:05:19,218 - INFO - Loaded 30000 rows into bronze.Drivers
+2025-08-27 17:05:19,524 - INFO - Loaded 30000 rows into bronze.Vehicles
+2025-08-27 17:05:19,524 - INFO - --- LOAD completed ---
+2025-08-27 17:05:19,524 - INFO - Pipeline finished successfully.
+2025-08-27 17:05:19,525 - INFO - ==================================================

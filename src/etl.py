@@ -27,7 +27,7 @@ logging.basicConfig(
 # --- 2. ORCHESTRATION LOGIC ---
 
 def run_script(script_name):
-    """Runs a given Python script as a subprocess and checks for errors."""
+
     script_path = SRC_DIR / script_name
     logging.info(f"--- Running script: {script_name} ---")
 
