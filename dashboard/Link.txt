@@ -1,0 +1,3 @@
+Dashboard Link - Metabase:
+http://localhost:3000/public/dashboard/d5ae83ad-7a14-4a4f-a5ac-202c7f9060a0
+
