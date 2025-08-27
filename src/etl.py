@@ -61,8 +61,7 @@ def main():
     logging.info("=== Starting Full End-to-End Medallion Pipeline Run ===")
 
     # Define the order of the scripts to be executed
-    pipeline_steps = [
-        "gen_data_apps_script.java",  # Step 0: Generate new.ipynb data
+    pipeline_steps = [ # Step 0: Generate new.ipynb data
         "push_to_bronze.py",  # Step 1: Ingest to Bronze
         "push_to_silver.py",  # Step 2: Clean and build Silver
         "add_constraints.py",  # Step 3: Add constraints to Silver
