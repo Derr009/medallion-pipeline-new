@@ -80,7 +80,7 @@ The pipeline is structured into three distinct layers:
 
 ```bash
 git clone https://github.com/Derr009/medallion-pipeline-new
-cd medallion-pipeline-new
+cd medallion-pipeline-new.ipynb
 ```
 
 ### Step 2: Set Up Python Environment
