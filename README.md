@@ -5,7 +5,7 @@
 This project implements a complete, end-to-end data pipeline for **Ekart**, a logistics and fulfillment company.
 It follows the **Medallion Architecture** to ingest, process, and analyze shipment data, transforming raw, messy source data into clean, analytics-ready tables that power a business intelligence dashboard.
 
-The pipeline simulates a real-world scenario, starting with raw operational data generated in **Google Sheets**, processing it through **Bronze, Silver, and Gold layers** in a **PostgreSQL** database, and culminating in an interactive **Metabase dashboard** for business analysis.
+The pipeline simulates a real-world scenario, starting with raw operational data generated in **Google Sheets**, processing it through **Bronze, Silver, and Gold layers** in a **PostgreSQL** database, and culminating in a **Metabase dashboard** for business analysis.
 
 ---
 
