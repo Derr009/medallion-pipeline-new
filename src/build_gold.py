@@ -69,6 +69,9 @@ def build_gold_layer(engine):
         "gold_monthly_driver_performance.sql",
         "gold_vehicle_utilization_summary.sql",
         "gold_full_shipment_details.sql"
+        "gold_customer_value_summary.sql"
+        "gold_monthly_operational_kpis.sql"
+        "gold_vehicle_failure_analysis.sql"
     ]
 
     for filename in gold_scripts:
